@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Расписания. Киров</string>
+    <string name="before_date">Показаны рейсы на </string>
+    <string name="change_date">Изменить дату</string>
+    <string name="open_db">Посмотреть сохранённые</string>
+    <string name="save_schedule">Сохранить</string>
+    <string name="clear_db">Очистить</string>
+</resources>

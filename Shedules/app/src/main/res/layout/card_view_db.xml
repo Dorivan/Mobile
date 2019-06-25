@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvDB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_transportDB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/ic_train"
+            tools:ignore="VectorDrawableCompat" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:id="@+id/titleTVDB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="33dp"
+                android:layout_marginEnd="33dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                tools:text="Киров — Анапа" />
+
+            <TextView
+                android:id="@+id/numberTVDB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleTVDB"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                tools:text="I8 606" />
+
+            <TextView
+                android:id="@+id/companyTVDB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/numberTVDB"
+                android:layout_marginStart="3dp"
+                android:textColor="@color/colorBlack"
+                tools:text="Ижавиа" />
+
+            <TextView
+                android:id="@+id/vehicleTVDB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/companyTVDB"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorBlack"
+                tools:text="ЯК-42" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/img_daysDB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vehicleTVDB"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/ic_dates"
+                tools:ignore="VectorDrawableCompat" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/img_timeDB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_daysDB"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/ic_time"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/daysTVDB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vehicleTVDB"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorBlack"
+                tools:text="вс с 16.06 по 08.09" />
+
+            <TextView
+                android:id="@+id/departureTVDB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/daysTVDB"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/colorBlack"
+                tools:text="2019-06-16 09:00:00" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

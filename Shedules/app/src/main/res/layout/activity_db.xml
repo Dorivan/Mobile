@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DBActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutDB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/typesOfTransportDB"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/before_dateDB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typesOfTransportDB"
+            android:layout_marginStart="8dp"
+            android:text="@string/before_date"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/dateTVDB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/typesOfTransportDB"
+            android:layout_marginStart="150dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            tools:text="15 06 2019" />
+
+        <Button
+            android:id="@+id/dateButtonDB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateTVDB"
+            android:onClick="setDate"
+            android:text="@string/change_date" />
+
+        <Button
+            android:id="@+id/clearDB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateButtonDB"
+            android:onClick="clearDB"
+            android:text="@string/clear_db" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvDB"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/clearDB" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
